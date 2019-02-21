@@ -1,0 +1,23 @@
+@mixin arrow($color) {
+  border: solid $color;
+  border-width: 0 6px 6px 0;
+  display: inline-block;
+  padding: 6px;
+}
+
+/* Media Query Manager */
+@mixin above($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin below($breakpoint) {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin pulse() {
+  animation: pulse 1.5s ease 0s infinite;
+}
