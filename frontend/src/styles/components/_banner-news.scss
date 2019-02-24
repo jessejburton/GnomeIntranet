@@ -1,0 +1,11 @@
+.banner__news {
+  padding: $s-size;
+  overflow: hidden;
+  height: 100%;
+}
+
+.news__item {
+  color: $color-primary;
+  display: inline-block;
+  margin-right: $s-size;
+}
