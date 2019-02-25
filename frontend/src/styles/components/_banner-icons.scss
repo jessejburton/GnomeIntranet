@@ -7,9 +7,36 @@
 
 .banner__icon {
   display: block;
-  background-color: $color-font;
   text-align: center;
-  height: 100%;
+  height: 7.8rem;
   width: 100%;
   border-radius: 2px;
+  cursor: pointer;
+  color: $color-white;
+  transition: all 0.3s ease;
+
+  span {
+    font-size: $font-size-small;
+    display: block;
+  }
+
+  .icon {
+    font-size: 3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &.light {
+    background-color: #246da4;
+    &:hover {
+      background-color: darken(#246da4, 10%);
+    }
+  }
+
+  &.dark {
+    background-color: #5d96b3;
+    &:hover {
+      background-color: darken(#5d96b3, 10%);
+    }
+  }
 }

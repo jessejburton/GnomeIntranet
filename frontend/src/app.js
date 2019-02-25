@@ -14,13 +14,31 @@ import {
   faBell,
   faSun,
   faCogs,
-  faSearch
+  faSearch,
+  faUser,
+  faUsers,
+  faBook,
+  faCalendarAlt,
+  faFileAlt,
+  faTh
 } from '@fortawesome/free-solid-svg-icons';
 import jwt_decode from 'jwt-decode';
 import setAuthToken from './helpers/setAuthToken';
 import { setCurrentUser, logoutUser } from './actions/auth';
 
-library.add(fab, faBell, faSun, faCogs, faSearch);
+library.add(
+  fab,
+  faBell,
+  faSun,
+  faCogs,
+  faSearch,
+  faUser,
+  faUsers,
+  faBook,
+  faCalendarAlt,
+  faFileAlt,
+  faTh
+);
 
 const store = configureStore();
 

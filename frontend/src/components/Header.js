@@ -55,10 +55,10 @@ class Header extends Component {
           <span className="header__link-underline">My Company</span>
         </div>
         <div className="header__links">
-          <div className="notifications header__icon">
-            <RingBell>
+          <div className="notifications">
+            <span className="header__icon">
               <FontAwesomeIcon icon="bell" />
-            </RingBell>
+            </span>
           </div>
           <div className="profile header__link-underline">
             <span className="image__container header__profile-image">
